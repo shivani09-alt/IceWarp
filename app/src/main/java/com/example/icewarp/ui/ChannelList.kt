@@ -4,14 +4,12 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.icewarp.R
-import com.example.icewarp.UserViewModel
 import com.example.icewarp.data.DatabaseHelper
 import com.example.icewarp.databinding.ActivityChannelListBinding
 import dagger.hilt.android.AndroidEntryPoint

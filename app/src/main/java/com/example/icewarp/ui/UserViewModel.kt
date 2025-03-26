@@ -1,17 +1,12 @@
-package com.example.icewarp
+package com.example.icewarp.ui
 
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.icewarp.data.Channel
-import com.example.icewarp.data.ChannelListResponse
-import com.example.icewarp.data.Permissions
 import com.example.icewarp.data.Repository
-import com.example.icewarp.ui.ChannelList
-import com.example.icewarpassignment.data.UserLoginResponse
 import dagger.hilt.android.lifecycle.HiltViewModel
-import io.reactivex.Single
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers

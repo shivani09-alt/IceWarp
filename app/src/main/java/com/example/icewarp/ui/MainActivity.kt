@@ -9,7 +9,6 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.icewarp.R
-import com.example.icewarp.UserViewModel
 import com.example.icewarp.data.DatabaseHelper
 import com.example.icewarp.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
