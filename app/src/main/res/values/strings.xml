@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">IceWarp</string>
+    <string name="sign_in_to_icewarp">Sign in to IceWarp</string>
+    <string name="email">Email</string>
+    <string name="sign_in">Sign in</string>
+    <string name="back">Back</string>
+    <string name="host">Host</string>
+    <string name="password">Password</string>
+</resources>
