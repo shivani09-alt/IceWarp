@@ -31,14 +31,15 @@ class ChannelList : AppCompatActivity() {
         }
         val dbHelper=DatabaseHelper(this)
         activityMainBinding.recyclerView.layoutManager = LinearLayoutManager(this)
-         activityMainBinding.deleteIcon.setOnClickListener({
-            dbHelper.deleteAllChannels()
+         activityMainBinding.deleteIcon.setOnClickListener {
+             dbHelper.deleteAllChannels()
              dbHelper.deleteUserToken()
-             val intent= Intent(this,MainActivity::class.java)
-             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK // Prevents multiple instances
+             val intent = Intent(this, MainActivity::class.java)
+             intent.flags =
+                 Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK // Prevents multiple instances
              startActivity(intent)
              finish()
-         })
+         }
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
                 finish()  // Closes activity when back is pressed
